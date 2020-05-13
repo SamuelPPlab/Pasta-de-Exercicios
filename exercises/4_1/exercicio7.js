@@ -1,6 +1,8 @@
 let nota = 25;
 
-if (nota <= 50) {
+  if (nota<0) {
+      console.log("Nota inválida")
+} else if (nota <= 50) {
     console.log("Você tirou um F. :(")
 } else if (nota<= 60) {
     console.log("Você tirou um E. :(")
@@ -10,6 +12,8 @@ if (nota <= 50) {
     console.log("Você tirou um C. :}")
 } else if (nota<= 90) {
     console.log("Você tirou um B. :]")
-} else {
+} else if (nota<=100) {
     console.log("Você tirou um A. XD")
+} else {
+    console.log("Nota inválida")
 }
