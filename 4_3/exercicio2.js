@@ -1,8 +1,8 @@
-let n = 9
-let a = [];
+let a = ["*"];
+let n = 8;
 
-
-for (let j = 0; j < n; j ++) {
-   a.push("*");
+for (let i = 0; i < n; i++) {
    console.log(a);
+   a[0]+=("*");
 }
+ 

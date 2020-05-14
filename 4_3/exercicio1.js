@@ -1,14 +1,10 @@
-let n = 9
-let a = [];
-let b = [];
+let a = ["*"];
+let n = 8;
 
-
-for (let i = 0; i < n; i++) {
-    a = [];
-    for (let j = 0; j < n; j ++) {
-        a.push("*");
+for (let l = 1; l < n; l++) {
+    a = ["*"]
+    for (let i = 1; i < n; i++) {
+        a[0]+=("*")
     }
-    b.push(a);
+    console.log(a);
 }
-
-console.log(b);
