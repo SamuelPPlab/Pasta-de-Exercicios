@@ -1,5 +1,5 @@
 let a = [""];
-let n = 8;
+let n = 10;
 let iii = 0
 
 for (iii = 1; iii <= n ; iii++) {
@@ -8,7 +8,6 @@ for (iii = 1; iii <= n ; iii++) {
       for (let i = 0; i < iii; i++) {
          a[0] += "*";}
       } else {
-
          for (let ii = n; ii > iii; ii--) {
             a[0] += " ";
         } for (let i = 0; i < iii; i++) {
