@@ -1,5 +1,4 @@
-let nota = 25;
-
+function numToLetter () {
   if (nota<0) {
       console.log("Nota inválida")
 } else if (nota <= 50) {
@@ -16,4 +15,5 @@ let nota = 25;
     console.log("Você tirou um A. XD")
 } else {
     console.log("Nota inválida")
+}
 }
