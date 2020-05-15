@@ -1,4 +1,3 @@
-let output = '';
 let info = 
 {
     personagem: 'Margarida',
@@ -9,7 +8,5 @@ let info =
 
 
 for ( i in info) {
-  output = ''
-  output += i + ': ' + info[i]+'; ';
-  console.log(output);
+  console.log(i + ': ' + info[i]+'; ');
 }
