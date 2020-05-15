@@ -7,9 +7,9 @@ function menorNumeroComIndex (a) {
         if (a[i] < mn[0]) {
     // esse if recebe algum numero do array, e compara com o número que já está na variavel mn(menor)
             mn = [a[i], i];
-            console.log("Menor número: " + mn[0] + " Index: " + mn[1]);
-        } else {
-            console.log('heh, não vai conseguir passar debaixo da porta. Numero: ' + mn[0] + " Index: " + mn[1])
-        }  
-    }}
-    
+        } 
+    }
+    return("Menor número: " + mn[0] + " Index: " + mn[1]);
+}
+
+console.log(menorNumeroComIndex([7, 1892, 12, 2, 49, 83]))

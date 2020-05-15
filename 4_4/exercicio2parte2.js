@@ -8,8 +8,9 @@ for (let i = 0; i < a.length; i++) {
     if (a[i] > mn[0]) {
 // esse if recebe algum numero do array, e compara com o número que já está na variavel mn(maior número)
         mn = [a[i], i];
-        console.log("Maior número: " + mn[0] + " Index: " + mn[1]);
-    } else {
-        console.log('heh, não chega aos meus pes. Numero: ' + mn[0] + " Index: " + mn[1])
-    }  
-}}
+    }
+}
+return("Maior número: " + mn[0] + " Index: " + mn[1]);
+}
+
+console.log(maiorNumeroComIndex([29, 233, 43534, 343, 32, 199999]))

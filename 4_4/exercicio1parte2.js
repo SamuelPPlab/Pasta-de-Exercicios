@@ -18,8 +18,10 @@ for (let i = 0; i <= pd.length; i++){
 
 if (comp === p) {
    éPalíndromo = true;
-   console.log("Essa palavra é um palíndromo? " + éPalíndromo)
+   return("Essa palavra é um palíndromo? " + éPalíndromo)
 } else {
-   console.log("Essa palavra é um palíndromo? " + éPalíndromo)
+   return("Essa palavra é um palíndromo? " + éPalíndromo)
 }
 }
+
+console.log(verificaPalindromo("arara"))
