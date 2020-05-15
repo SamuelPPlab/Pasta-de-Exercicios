@@ -1,27 +1,23 @@
-let a = 9;
-let b = 10 ;
 
-//adição
+function adicao(a,b){
 let c = a + b;
-
 console.log(c);
+}
 
-//subtração
+function subtração(a,b){
 let d = a - b;
-
 console.log(d);
+}
 
-//multiplicação
+function multiplicação(a,b){
 let e = a * b;
-
 console.log(e);
-
-//divisão
+}
+function divisão() {
 let f = a / b; 
-
 console.log(f);
-
-//módulo
+}
+function módulo() {
 let g = a % b;
-
 console.log(g);
+}
