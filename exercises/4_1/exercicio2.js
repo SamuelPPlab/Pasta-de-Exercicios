@@ -1,8 +1,7 @@
-let a = 12;
-let b = 11;
-
+function comparador (a, b) {
 if (a > b)  {
     console.log(a);
 } else {
     console.log(b);
+}
 }
