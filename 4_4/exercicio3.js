@@ -1,3 +1,5 @@
+//dando console.log apenas nas chaves do objeto.
+
 let info = 
 {
     personagem: 'Margarida',

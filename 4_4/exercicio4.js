@@ -1,3 +1,4 @@
+// dando console.log apenas nos valores do objeto
 let info = 
 {
     personagem: 'Margarida',

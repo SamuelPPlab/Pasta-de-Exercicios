@@ -1,3 +1,5 @@
+//dando console.log em tudo que está na info.
+
 let info = 
 {
     personagem: 'Margarida',
