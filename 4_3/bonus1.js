@@ -1,5 +1,5 @@
 let a = [""];
-let n = 17;
+let n = 51;
 let alt = (n -1 ) / 2 + 1;
 let l = (n % 2);
 let e = (n -1 ) / 2
@@ -25,6 +25,6 @@ for (let iii = 0; iii < alt; iii ++) {
     for (let ii = e; ii > iii; ii--) {
         a[0] += " ";
     }
-    l += 2
     console.log(a);
+    l += 2
 }
