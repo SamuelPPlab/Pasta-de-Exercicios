@@ -7,5 +7,5 @@ let info =
 };
 
 for (i in info) {
-    console.log(i)
+    console.log(info[i]);
 }
