@@ -1,7 +1,5 @@
-let PR = 3500
-let R1 = 0
-let R2 = 0
-
+function roubos (PR) {
+let R1 = 0, R2 = 0
 if (PR <= 1556.94) {
     R1 = PR - (PR * 0.08);
 } else if (PR <= 2594.92) {
@@ -25,3 +23,4 @@ if (PR <= 1903.98) {
 }
 
 console.log("O salário é " + (R1 - R2) + ". Sonegue sempre.")
+}
