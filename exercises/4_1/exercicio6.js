@@ -1,6 +1,6 @@
-let i = "torre"
-let iic = i.toUpperCase()
 
+function pecaDeXadrez (i) {
+let iic = i.toUpperCase()
 if (iic === "PEÃO") {
     console.log("Se move duas casas para frente na primeira jogada, e uma a partir da segunda, também pode capturar peças do adversário uma casa nas diagonais à sua frente.")
 } else if (iic === "CAVALO") {
@@ -16,3 +16,5 @@ if (iic === "PEÃO") {
 } else {
     console.log("Isso aí não é uma peça de Xadrez.")
 }
+}
+
