@@ -1,4 +1,4 @@
-function numToLetter () {
+function numToLetter (nota) {
   if (nota<0) {
       console.log("Nota inválida")
 } else if (nota <= 50) {
