@@ -57,12 +57,19 @@
   <body>
     <script>
 /* Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body; */
+
     function criandoh1 () {
-        let corpo = document.querySelector("body");
         let c1 = document.createElement("h1");
         let t = document.createTextNode("Exercício 4.5 - JavaScript DOM");
         c1.appendChild(t);
         document.getElementsByTagName("body")[0].appendChild(c1);
+    }
+/* Adicione a tag div com a classe main-content como filho da tag body; */
+
+    function criandoUmaDiv () {
+       let d1= document.createElement("div");
+       d1.className = "main-content"
+       document.getElementsByTagName("body")[0].appendChild(d1);
     }
     </script>
   </body>
