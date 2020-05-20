@@ -66,20 +66,32 @@
 /* Adicione a tag div com a classe main-content como filho da tag body; */
 
         let d1= document.createElement("div");
-        d1.className = "main-content"
+        d1.className = "main-content";
         document.getElementsByTagName("body")[0].appendChild(d1);
 
 /* Adicione a tag div com a classe center-content como filho da tag div criada no passo 2; */  
     
         let d2 = document.createElement("div");
-        d2.className = "center-content"
-        d1.appendChild(d2)
+        d2.className = "center-content";
+        d1.appendChild(d2);
 
 /* Adicione a tag p como filho do div criado no passo 3 e coloque algum texto; */
 
         let p1 = document.createElement("p");
-        p1.innerHTML = "Eis aqui um parágrafo que foi inserido a pedido do exercicio 4."
+        p1.innerHTML = "Eis aqui um parágrafo que foi inserido a pedido do exercicio 4.";
         d2.appendChild(p1);
+        
+/* Adicione a tag div com a classe left-content como filho da tag div criada no passo 2; */
+
+        let d3 = document.createElement("div");
+        d3.className = "left-content";
+        d1.appendChild(d3);
+
+/* Adicione a tag div com a classe right-content como filho da tag div criada no passo 2; */
+
+        let d4 = document.createElement("div");
+        d4.className = "right-content";
+        d1.appendChild(d4);
         
     </script>
   </body>
