@@ -58,23 +58,29 @@
     <script>
 /* Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body; */
 
-    let c1 = document.createElement("h1");
-    let t = document.createTextNode("Exercício 4.5 - JavaScript DOM");
-    c1.appendChild(t);
-    document.getElementsByTagName("body")[0].appendChild(c1);
+        let c1 = document.createElement("h1");
+        let t = document.createTextNode("Exercício 4.5 - JavaScript DOM");
+        c1.appendChild(t);
+        document.getElementsByTagName("body")[0].appendChild(c1);
 
 /* Adicione a tag div com a classe main-content como filho da tag body; */
 
-    let d1= document.createElement("div");
-    d1.className = "main-content"
-    document.getElementsByTagName("body")[0].appendChild(d1);
+        let d1= document.createElement("div");
+        d1.className = "main-content"
+        document.getElementsByTagName("body")[0].appendChild(d1);
 
 /* Adicione a tag div com a classe center-content como filho da tag div criada no passo 2; */  
     
-    let d2 = document.createElement("div");
-    d2.className = "center-content"
-    d1.appendChild(d2)
-  
+        let d2 = document.createElement("div");
+        d2.className = "center-content"
+        d1.appendChild(d2)
+
+/* Adicione a tag p como filho do div criado no passo 3 e coloque algum texto; */
+
+        let p1 = document.createElement("p");
+        p1.innerHTML = "Eis aqui um parágrafo que foi inserido a pedido do exercicio 4."
+        d2.appendChild(p1);
+        
     </script>
   </body>
 </html>
