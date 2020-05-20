@@ -65,7 +65,20 @@
         }
         /*
         4. Crie uma função que corrija o texto da tag <h1>.
+        */
+        function correcao (txt) {
+            document.querySelector("h1.title").innerHTML = txt
+        }
+        /*
         5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        */
+        function maiusculo () {
+            let p = document.querySelectorAll("p");
+            for (let i = 0; i < p.length; i++) {
+              p[i].style.textTransform = "uppercase"
+            }
+        }
+        /*
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
     </script>
