@@ -47,26 +47,49 @@
         - document.getElementsByTagName()
         1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
         */
-        function changeText (txt) {
+
+        function changeText () {
+            document.getElementById("comoMeVejo").innerHTML = "Me vejo com meus próprios olhos. Na verdade nem isso, já que não tem como eu me ver se não for com um espelho.";
+        }
+
+        /*Todos os exercicios tem uma versão 2 com parametro pra colocar o que quiser no texto sem ter que editar o html. (menos os dois ultimos) */
+
+        function changeTextV2 (txt) {
             document.getElementById("comoMeVejo").innerHTML = txt;
         }
+
         /*
         2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
         */
-        function mudaCorP (cor) {
-            document.getElementsByClassName("main-content")[0].style.backgroundColor = cor
-            
+        function mudaCorP () {
+            document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(15, 163, 107)"
         }
+
+        function mudaCorPV2 (cor) {
+            document.getElementsByClassName("main-content")[0].style.backgroundColor = cor  
+        }
+
         /*
         3. Crie uma função que mude a cor do quadrado vermelho para branco.
         */
-        function mudaCorDeDentro (cor) {
+
+        function mudaCorDeDentro () {
+            document.querySelector("div.center-content").style.backgroundColor = "white"
+        }
+
+        function mudaCorDeDentroV2 (cor) {
             document.querySelector("div.center-content").style.backgroundColor = cor
         }
+    
         /*
         4. Crie uma função que corrija o texto da tag <h1>.
         */
-        function correcao (txt) {
+
+        function correcao () {
+            document.querySelector("h1.title").innerHTML = "Exercício 4.5 - JavaScript"
+        }
+
+        function correcaoV2 (txt) {
             document.querySelector("h1.title").innerHTML = txt
         }
         /*
