@@ -92,7 +92,34 @@
         let d4 = document.createElement("div");
         d4.className = "right-content";
         d1.appendChild(d4);
-        
-    </script>
+
+/* Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5; */
+
+        let imag = document.createElement("img");
+        imag.src = "https://picsum.photos/200";
+        imag.className = "small-image";
+        d3.appendChild(imag);
+
+/* Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do div criado no passo 6; */
+
+        let numeros = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+        let lista = document.createElement("ul");
+        d4.appendChild(lista);
+
+        for (let i = 0; i < numeros.length; i++) {
+          console.log(i);
+          let item = document.createElement("li");
+          item.appendChild(document.createTextNode(numeros[i]));
+          lista.appendChild(item);
+        }
+
+/* Adicione 3 tags h3, todas sendo filhas do div criado no passo 2. */
+
+        for (let i = 0; i < 3; i++) {
+          let h3 = document.createElement("h3");
+          h3.innerHTML = "Tag h3 criada!!!"
+          d1.appendChild(h3)
+        }
+        </script>
   </body>
 </html>
