@@ -2,32 +2,57 @@
 <head>
   <meta charset="utf-8" />
   <title>Form</title>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div>
-    <form action="minhapage.html" method="GET">
+    <div id="erros"></div>
+    <form action="/" method="GET" id="form">
       <fieldset>
+        <legend>Dados Pessoais</legend>
         <label for="nome">Qual o seu nome?</label>
-        <input type="text" id="nome" required="required" name="nome" placeholder="Digite Seu nome" maxlength="40">
+        <input type="text" id="nome" required name="nome" placeholder="Digite Seu nome" maxlength="40">
         <label for="email">Qual o seu e-mail?</label>
-        <input type="email" id="email" required="required" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$" name="email" placeholder="Digite Seu email" maxlength="50">
+        <input type="email" id="email" required pattern="[a-zA-Z0-9.!#$%&'*+/=?_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" name="email" placeholder="Digite Seu email" maxlength="50">
         <label for="cpf">Qual o seu CPF</label>
-        <input type="number" id="cpf" required="required" name="cpf" placeholder="Digite Seu CPF" maxlength="11">
+        <input type="number" id="cpf" required name="cpf" minlength="11" maxlength="11">
         <label for="endereco">Qual o seu endereço?</label>
-        <input type="text" id="endereco" required="required" name="endereco" placeholder="Digite Seu endereço" maxlength="200">
+        <input type="text" id="endereco" required name="endereco" placeholder="Digite Seu endereço" maxlength="200">
         <label for="cidade">Qual sua cidade?</label>
-        <input type="text" id="cidade" required="required" name="cidade" placeholder="Qual sua cidade" maxlength="28">
+        <input type="text" id="cidade" required name="cidade" placeholder="Qual sua cidade" maxlength="28">
         <label for="estado">Qual o seu estado?</label>
         <select name="estado" id="estado"></select>
         <div>
           <p>Qual o tipo de residencia você tem?</p>
-          <input type="radio" id="casa" required="required" name="residencia" value="casa">
+          <input type="radio" id="casa" required name="residencia" value="casa">
           <label for="casa">Casa</label>
-          <input type="radio" id="apartamento" required="required" name="residencia" value="apartamento">
+          <input type="radio" id="apartamento" required name="residencia" value="apartamento">
           <label for="apartamento">Apartamento</label>
         </div>
       </fieldset>
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label for="resumo">Resuma sua experiência profissional:</label>
+        <input type="text" id="resumo" required maxlength="1000" name="resumo" placeholder="Resuma sua experiência profissional aqui com até 1000 caracteres.">
+        <label for="cargo">Qual o seu cargo no seu último emprego?</label>
+        <input type="text" id="cargo" required maxlength="40" name="cargo" placeholder="O que você fazia no seu último emprego?">
+        <label for="Descrição">Descreva o seu cargo</label>
+        <input type="text" id="Descrição" required name="Descrição" maxlength="500" placeholder="Descreva o seu cargo aqui">
+        <div>
+          <p>Quando você começou nesse emprego?</p>
+          <label for="dia">Dia</label>
+          <input type="number" id="dia" required min="1" max="31" >
+          <label for="mes">Mês</label>
+          <input type="number" id="mes" required min="1" max="12">
+          <label for="ano">Ano</label>
+          <input type="number" id="ano" required min="1">
+        </div>
+        <button type="submit" id="enviar">Enviar</button>
+      </fieldset>
     </form>
   </div>
-  <script src="script.js"></script>
+  <div id="curriculum">
+    <div id="pessoal"></div>
+    <div id="profissional"></div>
+  </div>
 </body>
