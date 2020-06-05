@@ -38,16 +38,17 @@
         <input type="text" id="cargo" required maxlength="40" name="cargo" placeholder="O que você fazia no seu último emprego?">
         <label for="Descrição">Descreva o seu cargo</label>
         <input type="text" id="Descrição" required name="Descrição" maxlength="500" placeholder="Descreva o seu cargo aqui">
-        <div>
+        <div id="data">
           <p>Quando você começou nesse emprego?</p>
           <label for="dia">Dia</label>
-          <input type="number" id="dia" required min="1" max="31" >
+          <input type="number" id="dia" required min="1" max="31">
           <label for="mes">Mês</label>
           <input type="number" id="mes" required min="1" max="12">
           <label for="ano">Ano</label>
           <input type="number" id="ano" required min="1">
         </div>
         <button type="submit" id="enviar">Enviar</button>
+        <button type="button" id="vassoura">Limpar</button>
       </fieldset>
     </form>
   </div>
