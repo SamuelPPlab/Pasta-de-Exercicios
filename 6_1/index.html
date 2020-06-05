@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Form</title>
+</head>
+<body>
+  <div>
+    <form action="minhapage.html" method="GET">
+      <fieldset>
+        <label for="nome">Qual o seu nome?</label>
+        <input type="text" id="nome" required="required" name="nome" placeholder="Digite Seu nome" maxlength="40">
+        <label for="email">Qual o seu e-mail?</label>
+        <input type="email" id="email" required="required" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$" name="email" placeholder="Digite Seu email" maxlength="50">
+        <label for="cpf">Qual o seu CPF</label>
+        <input type="number" id="cpf" required="required" name="cpf" placeholder="Digite Seu CPF" maxlength="11">
+        <label for="endereco">Qual o seu endereço?</label>
+        <input type="text" id="endereco" required="required" name="endereco" placeholder="Digite Seu endereço" maxlength="200">
+        <label for="cidade">Qual sua cidade?</label>
+        <input type="text" id="cidade" required="required" name="cidade" placeholder="Qual sua cidade" maxlength="28">
+        <label for="estado">Qual o seu estado?</label>
+        <select name="estado" id="estado"></select>
+        <div>
+          <p>Qual o tipo de residencia você tem?</p>
+          <input type="radio" id="casa" required="required" name="residencia" value="casa">
+          <label for="casa">Casa</label>
+          <input type="radio" id="apartamento" required="required" name="residencia" value="apartamento">
+          <label for="apartamento">Apartamento</label>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
