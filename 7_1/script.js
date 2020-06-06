@@ -21,7 +21,16 @@ function maiorPalavra (array) {
   }
   }
   return(an);
-  }
-  console.log(maiorPalavra("Antônio foi no banheiro e não sabemos o que aconteceu"))
+}
+console.log(maiorPalavra("Antônio foi no banheiro e não sabemos o que aconteceu"))
 
+//Exercicio 3
 
+const botao = document.getElementById('botao');
+let contador = 0;
+botao.addEventListener('click', function () {
+  const display = document.getElementById('display');
+  contador += 1;
+  console.log(contador);
+  display.innerHTML = contador;
+});
