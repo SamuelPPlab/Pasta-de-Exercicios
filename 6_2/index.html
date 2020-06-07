@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Form</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+</head>
+<body>
+  <header class="section">
+    <h1 class="has-text-centered title">
+      Framework de Curriculum
+    </h1>
+    <p class="subtitle has-text-centered">Querendo montar um curriculum mas não sabe por onde começar? Preencha este formulário e faremos todo o resto por você!</p>
+  </header>
+  <hr>
+  <div class="section">
+    <div id="erros"></div>
+    <form action="/" method="GET" id="form">
+      <fieldset>
+        <legend class="subtitle has-text-centered">Dados Pessoais</legend>
+        <div class="field">
+          <label class="label" for="nome">Qual o seu nome?</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" id="nome" required name="nome" placeholder="Digite Seu nome" maxlength="40">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="email">Qual o seu e-mail?</label>
+          <div class="control">
+            <input class="input is-rounded" type="email" id="email" required pattern="[a-zA-Z0-9.!#$%&'*+/=?_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" name="email" placeholder="Digite Seu email" maxlength="50">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="cpf">Qual o seu CPF</label>
+          <div class="control">
+            <input class="input is-rounded" type="number" id="cpf" required name="cpf" minlength="11" maxlength="11">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"  for="endereco">Qual o seu endereço?</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" id="endereco" required name="endereco" placeholder="Digite Seu endereço" maxlength="200">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"  for="cidade">Qual sua cidade?</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" id="cidade" required name="cidade" placeholder="Qual sua cidade?" maxlength="28">
+          </div>
+        </div>
+        <div class="select is-multiple is-primary is-rounded">
+          <label class="label"  for="estado">Qual o seu estado?</label>
+          <select name="estado" id="estado">
+            <option>Selecionar</option>
+          </select>
+        </div>
+        <div class="field">
+          <p class="label">Qual o tipo de residencia você tem?</p>
+          <div class="control">
+            <label class="radio" for="casa">
+              <input type="radio" id="casa" required name="residencia" value="casa">
+              Casa
+            </label>
+            <label class="radio" for="apartamento">
+              <input type="radio" id="apartamento" required name="residencia" value="apartamento">
+              Apartamento
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="subtitle has-text-centered">Dados Profissionais</legend>
+        <div class="field">
+          <label class="label"  for="resumo">Resuma sua experiência profissional:</label>
+          <div class="control">
+            <textarea class="textarea is-rounded" id="resumo" required maxlength="1000" name="resumo" placeholder="Resuma sua experiência profissional aqui com até 1000 caracteres."></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"  for="cargo">Qual o seu cargo no seu último emprego?</label>
+          <div class="control">
+            <textarea type="text" id="cargo" required maxlength="40" name="cargo" placeholder="O que você fazia no seu último emprego?"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"  for="Descrição">Descreva o seu cargo</label>
+          <div class="control">
+           <textarea class="textarea is-rounded" id="Descrição" required name="Descrição" maxlength="500" placeholder="Descreva o seu cargo aqui"></textarea>
+          </div>
+        </div>
+        <div>
+          <p class="label">Quando você começou nesse emprego?</p>
+          <div class="field">
+            <input class="input is-rounded" type="number" id="data">
+          </div>
+        </div>
+          <div class="field is-grouped">
+          <div>
+            <button type="submit" id="enviar" class="button is-success">Enviar</button>
+          </div>
+          <div>
+            <button type="button" id="vassoura" class="button is-danger">Limpar</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div id="curriculum">
+    <div id="pessoal"></div>
+    <div id="profissional"></div>
+  </div>
+</body>
