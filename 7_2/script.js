@@ -71,4 +71,9 @@ function placeFinder (obj, index) {
   return(values[index]);
 }
 
-console.log(placeFinder(lesson3, 3))
+//Exercicio 8 criar uma função que retorna a chave em um certo index
+
+function placeFinderK (obj, index) {
+  const keys = Object.keys(obj);
+  return(keys[index]);
+}
