@@ -23,3 +23,14 @@ const lesson3 = {
 function mod (alvo, chave, valor) {
   alvo[chave] = valor;
 }
+
+//Exercicio 2 - listar as chaves de um objeto com funções
+
+function lista (obj) {
+  for (i in obj) {
+    const keys = Object.keys(obj);
+    return(keys);
+  }
+}
+
+console.log(lista(lesson1));
