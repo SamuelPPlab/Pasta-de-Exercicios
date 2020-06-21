@@ -64,3 +64,11 @@ function totalAlunos (obj) {
   return (soma);
 }
 
+//Exercicio 7 criar uma função que retorna o valor de um certo index
+
+function placeFinder (obj, index) {
+  const values = Object.values(obj);
+  return(values[index]);
+}
+
+console.log(placeFinder(lesson3, 3))
