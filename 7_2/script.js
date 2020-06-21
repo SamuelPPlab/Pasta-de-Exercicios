@@ -40,6 +40,8 @@ function tamanho (obj) {
   return(tamanho.length);
 }
 
+//Exercicio 4 pronto - listar os valores de um objeto.
+
 function listaV (obj) {
   for (i in obj) {
     const values = Object.values(obj);
@@ -47,4 +49,18 @@ function listaV (obj) {
   }
 }
 
-console.log(listaV(lesson1))
+//Exercicio 5 pronto - criar um objeto com os tres primeiros objetos
+
+const allLessons = ({}, {lesson1, lesson2, lesson3});
+
+// Exercicio 6 criar uma função que soma o total de alunos das aulas.
+
+function totalAlunos (obj) {
+  let soma = 0;
+  const aulas = Object.keys(obj);
+  for (i in aulas) {
+    soma += obj[aulas[i]].numeroEstudantes;
+  }
+  return (soma);
+}
+
