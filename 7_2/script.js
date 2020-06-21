@@ -33,4 +33,18 @@ function lista (obj) {
   }
 }
 
-console.log(lista(lesson1));
+//Exercicio 3 pronto - achar o tamanho de um objeto.
+
+function tamanho (obj) {
+  const tamanho = Object.entries(obj);
+  return(tamanho.length);
+}
+
+function listaV (obj) {
+  for (i in obj) {
+    const values = Object.values(obj);
+    return(values);
+  }
+}
+
+console.log(listaV(lesson1))
