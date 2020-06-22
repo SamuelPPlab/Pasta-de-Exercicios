@@ -1,0 +1,33 @@
+body {
+	font-size: large;
+}
+h1 {
+	font-size: small;
+}
+h2 {
+	line-height: 1.6;
+}
+
+img {
+	margin: 100px 0;
+	max-width: 100%;
+}
+
+figure {
+	margin: 5px;
+}
+
+@media (min-width: 498px) {
+	body {
+		background-color: blue;
+		font-size: medium;
+		margin: auto 100px;
+	}
+
+	.imgCont {
+		display: flex;
+	}
+	figure {
+		width: 50%;
+	}
+}
