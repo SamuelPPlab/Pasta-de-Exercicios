@@ -126,3 +126,51 @@ const assert = require('assert');
 function thereIs() {}
 
 assert.strict(typeof(thereIs), 'function')
+
+//Parte 9
+
+const assert = require('assert');
+
+function buguei(param) {
+  return !param;
+}
+
+assert.ok(buguei(false));
+
+//Parte 10    
+
+const assert = require('assert');
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+assert.deepStrictEqual(obj1, obj2);
+assert.notDeepStrictEqual(obj1, obj3);
+assert.notDeepStrictEqual(obj2, obj3);
+
+//Parte 11 
+
+const assert = require('assert');
+
+function isAbove(num1, num2) {
+  if (num1 > num2) return(true);
+  if (num1 <= num2) return(false);
+}
+
+assert.strictEqual(typeof isAbove, 'function');
+assert.strictEqual(isAbove(2, 1), true);
+assert.strictEqual(isAbove(1, 2), false);
+assert.strictEqual(isAbove(0, -1), true);
+assert.strictEqual(isAbove(0, 0), false);
