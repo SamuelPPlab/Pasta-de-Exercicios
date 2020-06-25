@@ -38,3 +38,50 @@ const expected = [3, 6, 10, 5];
 assert.strictEqual(typeof wordLengths, 'function');
 const output = wordLengths(words);
 assert.deepEqual(output, expected);
+
+//Exercicio 3
+
+const assert = require('assert');
+
+const findTheNeedle = (arr, needle) => {
+  for (let i = 0; i < arr.length; i++) {
+   if (arr[i] === needle) {
+    return(i);
+  } else {
+    return(-1);
+  }
+  }
+}
+
+let words = ['house', 'train', 'slide', 'needle', 'book'];
+let expected = 3;
+let output = findTheNeedle(words, 'needle');
+assert.strictEqual(output, expected);
+
+words = ['plant', 'shelf', 'arrow', 'bird'];
+expected = 0;
+output = findTheNeedle(words, 'plant');
+assert.strictEqual(output, expected);
+
+words = ['plant', 'shelf', 'arrow', 'bird'];
+expected = -1;
+output = findTheNeedle(words, 'plat');
+assert.strictEqual(output, expected);
+
+//Exercicio 4
+
+const greetPeople = (people) => {
+  const total = [];
+  for (const person in people) {
+    let greeting = 'Hello ';
+    total.push(greeting += people[person]);
+  }
+  return total
+};
+
+const parameter = ['Irina', 'Ashleigh', 'Elsa'];
+const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
+
+const assert = require('assert');
+
+assert.strictEqual(greetPeople(parameter), result)
