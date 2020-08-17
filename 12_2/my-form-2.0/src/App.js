@@ -188,7 +188,7 @@ class App extends Component { // cria a classe app
           </form>
         <div className="container">
           <FormErrors formErrors={this.state.formErrors} />{/*renderiza os erros atuais passando para a
-          classe o estado atual dos erros*/ }
+          classe o estado atual dos erros*/}
         </div>
       </div>
     );
