@@ -31,7 +31,9 @@ function App() {
       <p>O exercicio 11 dá mais um exemplo da IMUTABILIDADE do estado do app e mostra como o spread operator serve para ajudar a mantê-la</p>
       <h1>Forma de manter a IMUTABILIDADE</h1>
       <p>As HOFs também são uma ajuda na hora de manter a imutabilidade de um estado, funções como o filter, find, some, map, etc.</p>
-      <h1></h1>
+      <h1>Mais maneiras de manter a IMUTABILIDADE:</h1>
+      <p>A função Object.assign() também pode ser usada no retorno para retornar as informações desejadas ainda sem alterar o estado. O segundo parametro dessa função pode ser usado para passar a entrada que você quer alterar.</p>
+      
     </div>
   );
 }
